@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>work18判断输入的是否为两位数.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<script type="text/javascript">
+window.onload=function(){
+	var obtn=document.getElementById("btn");
+	var otxt=document.getElementById("txt");
+	
+	obtn.onclick=function(){
+		var oval=otxt.value;
+		if(oval>=10&&oval<=99){
+			alert("两位数");
+		}else{
+			alert("非两位数");
+		}
+	};
+};
+</script>
+  </head>
+  
+  <body>
+    <input type="text" id="txt">
+    <input type="button" value="按钮" id="btn">
+  </body>
+</html>

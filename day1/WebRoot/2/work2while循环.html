@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>work2while循环.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<style type="text/css">
+div{
+    width:100px;
+    height:100px;
+    background:#666;
+    float:left;
+    margin-right:10px;
+    }
+</style>
+<script type="text/javascript">
+window.onload=function(){
+	var adiv=document.getElementsByTagName("div");
+	
+	//console.log(adiv.length);  //3
+	var i=0;  //初始条件
+	while(i<adiv.length){  //判断条件
+		adiv[i].onclick=function(){
+		alert("1");
+	};
+		i++;   //自增操作
+	};
+};
+</script>
+  </head>
+  
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>

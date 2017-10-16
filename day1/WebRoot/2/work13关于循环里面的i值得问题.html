@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>work13关于循环里面的i值得问题.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<style type="text/css">
+div{
+    width:100px;
+    height:100px;
+    background:red;
+    float:left;
+    margin-right:10px;
+    }
+</style>
+<script type="text/javascript">
+window.onload=function(){
+	var adiv=document.getElementsByTagName("div");
+	for(var i=0;i<adiv.length;i++){
+		adiv[i].onclick=function(){
+			alert(i);
+		};
+	}
+	
+};
+</script>
+  </head>
+  
+  <body>
+    <div></div><div></div><div></div>
+  </body>
+</html>

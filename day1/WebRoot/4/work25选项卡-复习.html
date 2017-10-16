@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>work25选项卡-复习.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<style type="text/css">
+#box1{
+      width:300px;
+      height:300px;
+      margin:100px auto;
+      border:#000 2px solid;
+      font-family:"微软雅黑";  
+      }
+#box1 a{
+        display:block;
+		float:left;
+		width:100px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		background:green;
+		color:#fff;
+		text-decoration:none;
+       }
+#box1 div{
+          width:300px;
+		  height:260px;
+		  line-height:260px;
+		  text-align:center;
+		  font-size:40px;
+		  display:none;
+		  }
+#box1 a.active{ 
+			  background:blue;
+		      }
+</style>
+<script type="text/javascript">
+window.onload=function(){
+	var obox=document.getElementById("box1");
+	var oa=obox.getElementsByTagName("a");
+	var odiv=obox.getElementsByTagName("div");
+		
+	/* oa[0].index=0;
+	oa[1].index=1;
+	oa[2].index=2; */
+	/* for(var i=0;i<oa.length;i++){
+		oa[i].index=i;
+	} */
+	for(var i=0;i<oa.length;i++){
+		//alert(i);  //0,1,2
+		oa[i].index=i;
+		oa[i].onclick=function(){
+			//alert(i);  //3
+			//alert(this.index);
+			for(var i=0;i<oa.length;i++){
+				oa[i].className="";
+				odiv[i].style.display="none";
+			}
+			this.className="active";
+			odiv[this.index].style.display="block";
+		};
+	}
+	//alert(i);  //3,循环后的i值
+};
+</script>
+  </head>
+  
+  <body>
+    <div id="box1">
+		<a href="javascript:;" class="active">按钮1</a>
+		<a href="javascript:;" >按钮2</a>
+		<a href="javascript:;" >按钮3</a>
+	    <div style="display:block;">div1</div>
+	    <div>div2</div>
+	    <div>div3</div>
+   </div>
+  </body>
+</html>

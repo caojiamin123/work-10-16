@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>work44提取行间事件1.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<style type="text/css">
+#box {
+	 width:100px;
+	 height:100px;
+	 background:red;
+     }
+</style>
+
+<script type="text/javascript">
+window.onload=function(){
+	var odiv=document.getElementById("box");	
+	odiv.onmouseover=function(){
+		odiv.style.width="200px";
+		odiv.style.height="200px";
+		odiv.style.background="green";
+	}
+	odiv.onmouseout=function(){
+		odiv.style.width="100px";
+		odiv.style.height="100px";
+		odiv.style.background="red";	
+	}
+}
+</script>
+  </head>
+  
+  <body>
+    <div id="box"></div>
+  </body>
+</html>

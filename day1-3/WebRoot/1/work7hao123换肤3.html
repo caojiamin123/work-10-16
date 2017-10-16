@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>work7hao123换肤3.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<link rel="stylesheet" type="text/css" href="" id="link">
+<script type="text/javascript">
+
+window.onload=function(){
+	var obtn1=document.getElementById("btn1");
+	var obtn2=document.getElementById("btn2");
+	var obtn3=document.getElementById("btn3");
+	var olink=document.getElementById("link");	
+	obtn1.onclick=function(){
+		olink.href="skin1.css";
+	}
+	obtn2.onclick=function(){
+		olink.href="skin2.css";
+	}
+	obtn3.onclick=function(){
+		olink.href="skin3.css";
+	}
+}
+</script>
+  </head>
+  
+  <body class="pink" id="body">
+    <input type="button" value="皮肤1" id="btn1">
+    <input type="button" value="皮肤2" id="btn2">
+    <input type="button" value="皮肤3" id="btn3">
+    <div id="box"></div>
+  </body>
+</html>

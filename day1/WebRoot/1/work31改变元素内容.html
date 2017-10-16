@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>work31改变元素内容.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<style type="text/css">
+#box{
+     width:200px;
+     height:200px;
+     background:red;
+     color:white;
+     font-size:50px;
+     }
+</style>
+<script type="text/javascript">
+window.onload=function(){
+	var obox=document.getElementById("box");
+	
+	obox.onclick=function(){
+		this.style.background="green";
+		this.innerHTML="不是一个div";
+	}
+	
+}
+</script>
+
+  </head>
+  
+  <body>
+    <div id="box">我是一个div</div>
+  </body>
+</html>

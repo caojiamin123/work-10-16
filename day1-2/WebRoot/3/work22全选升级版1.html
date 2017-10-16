@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>work22全选升级版1.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<script type="text/javascript">
+window.onload=function(){
+	var oinput=document.getElementsByTagName("input");
+	
+	oinput[0].onclick = function(){
+		//判断按钮的状态是否为选中:
+		if(this.checked==true){
+			//如果按钮是选中状态,所有的按钮都选中
+			for(var i=1;i<oinput.length;i++){
+				oinput[i].checked=true;	
+			}	
+		}else{//如果按钮不是选中状态,所有的按钮都不选中;
+			for(var i=1;i<oinput.length;i++){
+				oinput[i].checked=false;	
+			}
+		}	
+	};
+};
+</script>
+  </head>
+  
+  <body>
+        <input type="checkbox">
+        <hr>
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+	<input type="checkbox">
+  </body>
+</html>
